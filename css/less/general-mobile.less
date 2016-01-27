@@ -1,0 +1,240 @@
+@media all and (max-width: 992px) {
+	#mobile-menu-logo-wrapper {
+		padding-top: 17px;
+		padding-bottom: 17px;	
+		height: auto;	
+		position: fixed;
+		top: 0px;
+		width: 100%;		
+		z-index: 1500;	
+		z-index: 9999;
+		&.open {
+			overflow-y: visible;	
+			overflow-x: visible;	
+			min-height: 100%;
+			background: @menu-bg-grey-2;
+			margin-top: 0px;
+			&:before {
+				content: "";
+				width: 100%;
+				height: 5px;
+				background-color: @dark-blue;
+				display: block;
+				position: absolute;
+				top: -5px;
+			}
+			.mobile-menu {
+				padding-bottom: 17px;
+				.toggle-menu {
+					a {
+						color: @light-blue;
+						.nav-bar {
+				    		background-color: @light-blue;
+				  		}
+					}
+				}
+				.logo {
+					background: url(../images/logo/blink-small.png) no-repeat;
+					background-size: contain;
+				}				
+			}
+		}
+		&.white-version { // when scroll down
+			background: @menu-bg-grey-2;
+			margin-top: 5px;
+			&:before {
+				content: "";
+				width: 100%;
+				height: 5px;
+				background-color: @dark-blue;
+				display: block;
+				position: absolute;
+				top: -5px;
+			}
+			.mobile-menu {
+				.toggle-menu {
+					a {
+						color: @light-blue;
+						.nav-bar {
+				    		background-color: @light-blue;
+				  		}
+					}
+				}
+				.logo {
+					background: url(../images/logo/blink-small.png) no-repeat;
+				}						
+			}
+		}
+		.mobile-menu {
+	        .logo {
+				background: url(../images/logo/blink-white-small.png) no-repeat;
+				width: 110px;
+				height: 10px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+	        .toggle-menu {
+				display: block; 
+
+				a {
+					color: @white;
+					display: block;					
+					&:active {            
+					  .nav-bar {
+					    background-color: @white;
+					  }
+					}
+					.nav-bar {
+					  background-color: @white;
+					  display: block;
+					  height: 3px;
+					  margin: 3px auto;
+					  width: 22px;
+					  .transition();
+
+					  &:nth-of-type(1n){
+					  	margin-top: 0px;
+					  }
+					  &:nth-of-type(3n){
+					  	margin-bottom: 0px;
+					  }
+					}
+				}
+	        }
+      	}	      
+		.mobile-nav-container {
+			display: none;
+			background-color: @white;
+			height: 100%;
+
+			&.open {
+				display: block;
+			}
+
+			ul.mobile-nav {
+				> li {			
+					padding: 35px 0px;
+					position: relative;
+					&:after {
+						content: " ";
+						border-bottom: 1px solid @seperator-line;
+						width: 100%;
+						height: 1px;
+						background-color: @seperator-line;
+						position: absolute;
+						left: 0px;
+						bottom: 0px;
+					}
+					&.active {
+						padding-bottom: 0px;
+					}
+					> a {
+						padding: 0px 15px;
+						display: block;
+						.gotham-medium;
+						font-size: 32px;
+						line-height: 32px;
+						letter-spacing: 0.08em;
+						color: @light-grey;
+						text-transform: uppercase;
+						&:hover {
+							color: @light-blue;
+						}
+						&.active {
+							margin-bottom: 30px;
+						}
+					}
+
+					ul.mobile-nav-child {
+						display: none;
+						border-top: 4px solid @light-blue;
+						background-color: #f3f3f3;
+						padding-bottom: 30px;
+						padding-top: 30px;
+						&.open {
+							display: block;
+						}
+						li {
+							// margin-bottom: 40px;
+							&:last-child {
+								margin-bottom: 0px;
+							}
+							a {
+								padding: 0 15px;
+								.open-sans-regular;
+								font-size: 28px;
+								line-height: 65px;
+								color: @light-blue;
+								text-transform: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}	
+	
+
+	#page-wrapper {
+		#content-wrapper { 
+			#menu-logo-wrapper { 
+				.main-menu {
+					display: none;
+				}
+			}			
+		}
+		.slider-wrapper { 
+			.arrow {
+				top: 93%;
+			}
+			div.item {
+				div.carousel-caption {
+					top: 38%;
+					width: 80%;
+					&.insights-caption {
+						width: 80%;
+					}					
+				}				
+			}
+		}
+		.carousel-indicators {
+			display: none;
+		}
+
+		footer#footer-wrapper {
+			// padding: 10*1.2px 0px;
+			padding: 0px;
+			div.tweet {
+				float: none!important;
+				p {
+					font-size: 18/1.7px;
+					i {
+						font-size: 12px;
+						line-height: 7px;
+						letter-spacing: 0.025em;
+					}
+				}
+				ul {
+					text-align: center;
+					li {
+						a {
+							font-size: 10px;
+							letter-spacing: 0.1em;
+						}
+						&:after {
+							margin-left: 23px;
+    						margin-right: 23px;
+						}
+					}
+				}
+			}
+			.sharing {
+				float: none!important;
+				margin-top: 10px; 
+				ul {
+					float: right;
+				}
+			}
+		}
+	}
+} 

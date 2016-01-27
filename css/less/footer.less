@@ -1,0 +1,51 @@
+//   _____ ___   ___ _____ _____ ____  
+//  |  ___/ _ \ / _ \_   _| ____|  _ \ 
+//  | |_ | | | | | | || | |  _| | |_) |
+//  |  _|| |_| | |_| || | | |___|  _ < 
+//  |_|   \___/ \___/ |_| |_____|_| \_\
+//
+
+footer#footer-wrapper {
+	padding: 0 40px;
+	background-color: @dark-grey;
+	.v-align-table {
+		width: 100%;
+		height: 100%;
+		display: table;	   		
+
+		.v-align-table-cell {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+	.copyright {
+		width: 88%;
+		display: inline-block;
+		vertical-align: middle;
+		p {
+			color: @white;
+			font-size: 12px;
+			line-height: 22px;
+		}	
+	}
+	
+	ul {
+		width: 11%;
+		display: inline-block;
+		vertical-align: middle;
+		text-align: right;
+		li {
+			display: inline-block;
+			margin-right: 25px;
+			&:last-child {
+				margin-right: 0px;
+			}
+			a {
+				font-size: 20px;
+				letter-spacing: 0.1em;
+				color: @white;
+			}
+		}
+	}
+	
+}
