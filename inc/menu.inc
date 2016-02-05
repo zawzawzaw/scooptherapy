@@ -13,12 +13,12 @@
 			</div>
 			<div class="main-nav-wrapper">
 				<ul class="main-nav">
-					<li><a href="about.html">About</a></li>
-					<li><a href="flavours.html">Flavours</a></li>
-					<li><a href="news.html">News</a></li>
-					<li><a href="locate.html">Locate</a></li>
-					<li><a href="contact.html">Contact</a></li>						
-					<li><a href="join-us.html">Join Us</a></li>				
+					<li><a href="#about">About</a></li>
+					<li><a href="#flavours">Flavours</a></li>
+					<li><a href="#news">News</a></li>
+					<li><a href="#locate">Locate</a></li>
+					<li><a href="#contact">Contact</a></li>						
+					<li><a href="#join-us">Join Us</a></li>				
 				</ul>				
 			</div>
 		</div>

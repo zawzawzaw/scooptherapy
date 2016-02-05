@@ -6,6 +6,7 @@
 			display: inline-block;
 			vertical-align: middle;
 			width: 50%;
+			margin-bottom: -7px;
 			img {
 				width: 100%;
 			}
@@ -16,7 +17,16 @@
 			vertical-align: middle;
 			width: 50%;
 			margin-left: -5px;
-			padding-left: 83px;				
+			padding-left: 83px;		
+			padding-right: 70px;		
+			h4 {
+				margin-bottom: 13px;
+			}
+			h3 {
+				text-transform: uppercase;
+				color: @black;
+				margin-bottom: 24px;
+			}		
 		}
 	}
 	.content-2 {
@@ -35,25 +45,345 @@
 		.img-text-content {
 			width: 100%; 
 			text-align: center;
-			padding-top: 65px;
+			padding-top: 35px;
 			.each-flavour {
 				display: inline-block;
-				width: 24%;
-				a {
-					color: @black;
+				width: 23%;
+				a {					
 					&.category {
-						margin-top: 20px;
-					}
-					h4 {
-						text-transform: uppercase;
-						margin-bottom: 20px;
-					}
+						h4 {
+							color: @black;
+							text-transform: uppercase;
+							margin-bottom: 20px;
+							margin-top: 18px;
+						}
+					}					
 				}
 				ul {
 					li {
 						margin-bottom: 5px;
+						&.no {
+							position: relative;
+							&:after {
+								content: "No.2";
+								background: url(../images/icons/no.png) no-repeat;
+								position: absolute;
+								right: 105px;
+								width: 45px;
+								height: 32px;
+								display: block;
+								color: @white;
+								.hurmegeometricsans2-black;
+								font-size: 12px;
+								letter-spacing: 0.05em;								
+								padding-top: 4px;
+    							top: -14px;
+    							text-transform: uppercase;							
+							}
+						}
+						&.no-1 {
+							&:after {
+								content: "No.1"!important;
+								right: 115px;
+							}
+						}
+						a {
+							color: @black;
+						}
 					}
 				}
+			}
+		}
+	}
+
+	.content-3 {
+		background-color: @light-grey;
+		// height: 845px;
+		padding-top: 75px;
+		padding-bottom: 100px;
+		.heading {
+			text-align: center;
+			h4, h2 {
+				text-transform: uppercase;
+			}
+			h4 {
+				color: @yellow;
+				margin-bottom: 15px;
+			}
+		}
+		.img-text-content {
+			width: 100%; 
+			text-align: center;
+			padding-top: 50px;
+
+			.instagram {
+				display: inline-block;
+				vertical-align: top;
+				margin-right: 95px;
+				.instagram-header {
+					h4 {
+						color: @black;
+						vertical-align: top;
+					}
+					a {
+						.hurmegeometricsans2-black;
+						color: @grey;
+						font-size: 12px;
+						letter-spacing: 0.05em;
+						text-transform: uppercase;
+						i {
+							font-size: 10px;
+						}
+						&:hover {
+							color: @dark-grey-2;
+						}
+					}
+				}
+				.instagram-content {
+					margin-top: 15px;
+					ul {
+						display: inline-block;
+						li {
+							display: block;
+							max-height: 78px;
+							margin-bottom: 3.3px;
+							a {
+								display: block;
+							}
+						}
+					}
+					img {
+						display: inline-block;
+					}
+				}
+			}
+			.twitter {
+				display: inline-block;
+				vertical-align: top;
+				// height: 440px;
+				// overflow-y: hidden;
+				.twitter-header {
+					margin-bottom: 15px;
+					h4 {
+						color: @black;
+						vertical-align: top;
+					}
+					a {
+						.hurmegeometricsans2-black;
+						color: @grey;
+						font-size: 12px;
+						letter-spacing: 0.05em;
+						text-transform: uppercase;
+						i {
+							color: @dark-blue;
+							font-size: 13px;
+						}
+						&:hover {
+							color: @dark-grey-2;
+						}
+					}
+				}
+				.twitter-content {					
+					height: 404px;
+					ul {
+						border-top: 1px solid @seperator-line;
+						border-bottom: 1px solid @seperator-line;
+						li {
+							border-bottom: 1px solid @seperator-line;
+							padding-top: 20px;
+							padding-bottom: 20px;
+							&:last-child {
+								border-bottom: none;
+							}
+							.twitter-img {								
+								display: inline-block;
+								vertical-align: top;								
+								margin-right: 15px;
+							}
+							.twitter-text {
+								width: 340px;
+								display: inline-block;
+								vertical-align: top;
+								text-align: left;								
+								h5 {
+									line-height: 12px;
+									text-transform: uppercase;
+									color: @dark-grey-2;
+									margin-bottom: 5px;
+									.tag {
+										color: @grey;
+									}
+								}
+								p {
+									font-size: 12px;
+									line-height: 22px;
+									color: @grey;
+									a {
+										color: @grey;
+									}
+								}
+								
+							}
+							.date-time {
+								width: 70px;
+								display: inline-block;
+								vertical-align: top;
+								text-align: right;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.content-4 {
+		background: url(../images/content/bg-divider.png) no-repeat center center;
+		width: 100%;
+		height: 450px;
+		background-size: cover;
+		margin-bottom: 20px;
+	}
+
+	.content-5 {
+		padding-top: 75px;
+		padding-bottom: 100px;
+		.heading {
+			text-align: center;
+			h4, h2 {
+				text-transform: uppercase;
+			}
+			h4 {
+				color: @yellow;
+				margin-bottom: 15px;
+			}
+		}
+		.img-text-content {
+			width: 100%; 
+			text-align: center;
+			padding-top: 50px;
+			.map {
+				display: inline-block;
+				margin-right: 66px;
+			}
+			.text-content {
+				display: inline-block;
+				width: 665px;
+				vertical-align: top;
+				.info {
+					display: inline-block;
+					vertical-align: top;
+					width: 220px;
+					margin-right: 110px;
+					text-align: left;
+					margin-bottom: 49px;
+					h4 {
+						color: @black;
+						margin-bottom: 10px;
+					}
+					p {
+						color: @dark-grey-2;	
+						a {
+							color: @yellow;
+						}					
+					}
+					a {
+						color: @dark-grey-2;
+					}
+				}
+			}
+		}
+	}
+
+	.content-6 {
+		padding-top: 75px;
+		padding-bottom: 100px;
+		.heading {
+			text-align: center;
+			h4, h2 {
+				text-transform: uppercase;
+			}
+			h4 {
+				color: @yellow;
+				margin-bottom: 15px;
+			}
+		}
+		.contact-form {
+			width: 100%; 
+			text-align: center;
+			padding-top: 60px;
+			label {
+				display: block;
+				.gotham-book;
+				font-size: 13px;
+				line-height: 23px;
+				color: @grey;
+			}
+			.left-fields {
+				display: inline-block;
+				vertical-align: top;
+				width: 300px;
+				margin-right: 48px;
+				text-align: left;
+				.field {
+					margin-bottom: 16px;
+				}
+				label {
+					display: block;
+					margin-bottom: 4px;
+				}
+				input, select {
+					width: 100%;
+					background: none;
+					border: 1px solid @input-border;
+					height: 26px;
+					padding-left: 6px;
+					.gotham-book;
+					font-size: 13px;
+					line-height: 23px;
+				}
+			}
+			.right-fields {
+				display: inline-block;
+				vertical-align: top;
+				width: 485px;
+				text-align: left;							
+				textarea {
+					width: 100%;
+					background: none;
+					border: 1px solid @input-border;
+					height: 162px;
+					padding-left: 6px;
+					.gotham-book;
+					font-size: 13px;
+					line-height: 23px;
+				}
+				span {
+					.gotham-book;
+					font-size: 11.5px;
+					line-height: 18px;
+					color: @grey;
+					padding-left: 6px;
+					display: block;
+					a {
+						color: @grey;
+						&:hover {
+							color: @dark-grey;
+						}
+					}
+				}				
+			}
+			.submit {
+				.hurmegeometricsans2-black;
+				font-size: 12px;
+				letter-spacing: 0.05em;
+				color: @white;
+				display: block;
+				background-color: @black;
+				border: none;
+				width: 80px;
+				height: 30px;
+				margin-top: 25px;
 			}
 		}
 	}

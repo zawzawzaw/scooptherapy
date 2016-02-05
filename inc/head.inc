@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="css/animate.min.css" />
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/mobile-style.css" />
+<link rel="stylesheet" href="js/plugins/jquery.scrollbar.css" />
 
 <!-- JS -->
 <script type="text/javascript" src="js/vendors/jquery/jquery-1.11.1.min.js"></script>
@@ -32,5 +33,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ScrollToPlugin.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/jquery.scrollbar.js"></script>
 
 <script type="text/javascript" src="js/main.js"></script>

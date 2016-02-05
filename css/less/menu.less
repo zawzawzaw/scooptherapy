@@ -10,9 +10,8 @@
 		z-index: 500;		
 		.transition-in();
 		&.white-version { // when scroll down
-			// border-top: 5px solid @dark-blue;
-			// border-bottom: 1px solid @menu-seperator-grey;	
 			background: @light-grey;
+			padding: 7px 0px;
 			&:before {
 				content: "";
 				width: 100%;
@@ -38,9 +37,6 @@
 						}
 					}
 				}
-				.logo {
-					background: url(../images/logo/blink.png) no-repeat;
-				}				
 			}	
 			.mobile-menu {
 				.toggle-menu {
@@ -51,19 +47,13 @@
 				  		}
 					}
 				}
-				.logo {
-					background: url(../images/logo/blink.png) no-repeat;
-				}				
 			}
 		}
 		&:hover {			
 			.main-menu {
 				.menu {
 					// color: @light-blue;
-				}
-				.logo {
-					// color: @light-blue;
-				}				
+				}						
 			}			
 		}		
 		.main-menu {
@@ -97,19 +87,19 @@
 						  }
 						}
 						.nav-bar {
-						  background-color: @black;
-						  display: block;
-						  height: 3px;
-						  margin: 3px auto;
-						  width: 22px;
-						  .transition();
+						  	background-color: @black;
+						  	display: block;
+						    height: 4px;
+						    margin: 4px auto;
+						    width: 30px;
+						  	.transition();
 
-						  &:nth-of-type(1n){
-						  	margin-top: 0px;
-						  }
-						  &:nth-of-type(3n){
-						  	margin-bottom: 0px;
-						  }
+						  	&:nth-of-type(1n){
+						  		margin-top: 0px;
+						  	}
+						  	&:nth-of-type(3n){
+							  	margin-bottom: 0px;
+						  	}
 						}
 					}
 				}				
@@ -118,7 +108,14 @@
 				display: inline-block;			
 				vertical-align: middle;				
 				ul.main-nav {					
-					display: inline-block;									
+					// display: inline-block;									
+					visibility: hidden;
+					.opacity(0);
+					.transition(.8s);
+					&.show-nav {
+						visibility: visible;
+						.opacity(1);
+					}									
 					li {
 						display: inline-block;	
 						margin-right: 41px;			
@@ -130,7 +127,10 @@
 							letter-spacing: 0.03em;
 							color: @black;
 							text-transform: uppercase;						
-							position: relative;		
+							position: relative;	
+							&.active-nav {
+								color: @yellow;
+							}	
 							&:after{
 						        content: "";
 						        display: block;
@@ -145,6 +145,7 @@
 						        .transition-in();
 					      	}
 							&:hover {
+								color: @yellow;
 								&:after {
 									.opacity(1);
 									width: 100%;
