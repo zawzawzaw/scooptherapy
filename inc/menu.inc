@@ -1,4 +1,4 @@
-<div id="menu-logo-wrapper" class="animated slideInDown hidden-xs hidden-sm">
+<div id="menu-logo-wrapper" class="animated slideInDown">
 	
 	<div class="main-menu">		
 		<div class="pull-left">
@@ -11,14 +11,13 @@
 					</a> 
 				</div>
 			</div>
-			<div class="main-nav-wrapper">
+			<div class="main-nav-wrapper hidden-xs hidden-sm">
 				<ul class="main-nav">
 					<li><a href="#about">About</a></li>
 					<li><a href="#flavours">Flavours</a></li>
 					<li><a href="#news">News</a></li>
 					<li><a href="#locate">Locate</a></li>
-					<li><a href="#contact">Contact</a></li>						
-					<li><a href="#join-us">Join Us</a></li>				
+					<li><a href="#contact">Contact</a></li>					
 				</ul>				
 			</div>
 		</div>

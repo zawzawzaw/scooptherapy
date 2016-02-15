@@ -1,6 +1,6 @@
-<title>SCOOP THERAPHY</title>
-<meta name="description" content="SCOOP THERAPHY">
-<meta name="keywords" content="SCOOP THERAPHY">
+<title>SCOOP THERAPY</title>
+<meta name="description" content="SCOOP THERAPY">
+<meta name="keywords" content="SCOOP THERAPY">
 
 <!-- Mobile Viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,7 +33,9 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ScrollToPlugin.min.js"></script>
+<script type="text/javascript" src="js/plugins/instafeed.min.js"></script>
+<script type="text/javascript" src="js/plugins/twitterFetcher.full.js"></script>
 
 <script type="text/javascript" src="js/plugins/jquery.scrollbar.js"></script>
-
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 <script type="text/javascript" src="js/main.js"></script>

@@ -6,7 +6,7 @@
 			display: inline-block;
 			vertical-align: middle;
 			width: 50%;
-			margin-bottom: -7px;
+			// margin-bottom: -7px;
 			img {
 				width: 100%;
 			}
@@ -61,34 +61,33 @@
 				}
 				ul {
 					li {
-						margin-bottom: 5px;
-						&.no {
-							position: relative;
-							&:after {
-								content: "No.2";
-								background: url(../images/icons/no.png) no-repeat;
-								position: absolute;
-								right: 105px;
-								width: 45px;
-								height: 32px;
-								display: block;
-								color: @white;
-								.hurmegeometricsans2-black;
-								font-size: 12px;
-								letter-spacing: 0.05em;								
-								padding-top: 4px;
-    							top: -14px;
-    							text-transform: uppercase;							
-							}
-						}
-						&.no-1 {
-							&:after {
-								content: "No.1"!important;
-								right: 115px;
-							}
-						}
+						margin-bottom: 5px;						
 						a {
 							color: @black;
+							&.no {
+								position: relative;
+								&:after {
+									content: "No.2";
+									background: url(../images/icons/no.png) no-repeat;
+									position: absolute;
+									right: -54px;
+									width: 45px;
+									height: 32px;
+									display: block;
+									color: @white;
+									.hurmegeometricsans2-black;
+									font-size: 12px;
+									letter-spacing: 0.05em;								
+									padding-top: 4px;
+	    							top: -17px;
+	    							text-transform: uppercase;							
+								}
+							}
+							&.no-1 {
+								&:after {
+									content: "No.1"!important;
+								}
+							}
 						}
 					}
 				}
@@ -149,11 +148,20 @@
 							margin-bottom: 3.3px;
 							a {
 								display: block;
+								&.insta_small {
+									img {
+										width: 76px;
+									}
+								}
 							}
 						}
 					}
 					img {
 						display: inline-block;
+						&#insta_big {
+							width: 399px;
+							height: 403px;
+						}
 					}
 				}
 			}
@@ -199,6 +207,9 @@
 								display: inline-block;
 								vertical-align: top;								
 								margin-right: 15px;
+								span {
+									display: none;
+								}
 							}
 							.twitter-text {
 								width: 340px;
@@ -246,8 +257,7 @@
 	}
 
 	.content-5 {
-		padding-top: 75px;
-		padding-bottom: 100px;
+		padding: 75px 40px 100px 40px;
 		.heading {
 			text-align: center;
 			h4, h2 {
@@ -265,6 +275,11 @@
 			.map {
 				display: inline-block;
 				margin-right: 66px;
+			    width: 34%;
+				height: 423px;
+				// img {
+				// 	width: 100%;
+				// }
 			}
 			.text-content {
 				display: inline-block;
@@ -290,6 +305,9 @@
 					a {
 						color: @dark-grey-2;
 					}
+					&:last-child {
+						margin-bottom: 0px;
+					}
 				}
 			}
 		}
@@ -298,6 +316,7 @@
 	.content-6 {
 		padding-top: 75px;
 		padding-bottom: 100px;
+		background-color: @light-grey;
 		.heading {
 			text-align: center;
 			h4, h2 {

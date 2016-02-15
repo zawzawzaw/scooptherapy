@@ -13,6 +13,8 @@
 	<!--#include virtual="inc/head.inc" -->
 </head>
 <body>
+
+	<!--#include virtual="inc/mobile-menu.inc" -->	
 	
 	<div id="page-wrapper">	
 
@@ -20,17 +22,18 @@
 
 	<div id="content-wrapper">
 	
-		<!--#include virtual="inc/menu.inc" -->	
+		<!--#include virtual="inc/menu.inc" -->			
 
 		<div id="main-content" class="home">
 			
 			<div id="about" class="content-1">
 				<div class="img-content">
-					<img src="images/content/about-us-content-1.png" alt="">
+					<img src="images/content/about-us-content-1.png" class="img-responsive" alt="">
 				</div>
 				<div class="text-content">					
 					<h4>About Us</h4>
-					<h3>“Connecting people through <br> conversations and ice craeam.”</h3>
+					<h3 class="hidden-xs hidden-sm">“Connecting people through <br> conversations and ice craeam.”</h3>
+					<h3 class="visible-xs visible-sm">“Connecting people through conversations and ice craeam.”</h3>
 					<p>Group Therapy began as a collective events space housed within a restored shophouse along the gentrified Duxton Road. While operating as a café in the day, our space continues to actively serve as an events space available for lifestyle workshops, private parties and corporate events.</p>
 
 					<p>We believe that the best form of nourishment is sought through building inter-personal relationships and connections with people, where common values and ideals are forged. We hope that Group Therapy is the perfect setting and catalyst for such encounters – hence the name!</p>						
@@ -54,7 +57,7 @@
 							<a href="#" class="category"><h4>Dairy</h4></a>
 							<ul>
 								<li><a href="#">Vanilla Bean</a></li>
-								<li class="no"><a href="#">Dark Chocolate</a></li>
+								<li><a href="#" class="no">Dark Chocolate</a></li>
 								<li><a href="#">London Fog (Earl Grey Vanilla)</a></li>
 								<li><a href="#">Salted Caramel</a></li>
 								<li><a href="#">Mint Cookies</a></li>
@@ -80,7 +83,7 @@
 								<li><a href="#">Butter Beer</a></li>
 								<li><a href="#">Rum & Raisin</a></li>
 								<li><a href="#">Whiskey Hazelnut</a></li>
-								<li class="no no-1"><a href="#">Brandy Cherry</a></li>
+								<li><a href="#" class="no no-1">Brandy Cherry</a></li>
 								<li><a href="#">Peach & Champagne</a></li>
 								<li><a href="#">Chocolate Stout</a></li>
 							</ul>
@@ -102,15 +105,15 @@
 			</div>
 
 			<div id="news" class="content-3">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-12">
+				<!-- <div class="container-fluid"> -->
+				<!-- 	<div class="row">
+						<div class="col-md-12"> -->
 							<div class="heading">
 								<h4>Connecting with us</h4>
 								<h2>Something’s been brewing</h2>
 							</div>
-						</div>
-					</div>
+						<!-- </div>
+					</div> -->
 
 					<div class="img-text-content">
 						<div class="instagram">
@@ -119,13 +122,14 @@
 								<a class="pull-right" href="#"><i class="fa fa-plus"></i> Follow</a>
 								<div class="clear"></div>
 							</div>
+							<!-- <div id="instafeed"></div> -->
 							<div class="instagram-content">
-								<ul>
-									<li><a href="#"><img src="images/content/instagram-small-1.png" alt=""></a></li>
-									<li><a href="#"><img src="images/content/instagram-small-1.png" alt=""></a></li>
-									<li><a href="#"><img src="images/content/instagram-small-1.png" alt=""></a></li>
-									<li><a href="#"><img src="images/content/instagram-small-1.png" alt=""></a></li>
-									<li><a href="#"><img src="images/content/instagram-small-1.png" alt=""></a></li>
+								<ul id="instafeed">
+									<!-- <li><a href="#" class="insta_small"><img src="images/content/instagram-small-1.png" alt=""></a></li>
+									<li><a href="#" class="insta_small"><img src="images/content/instagram-small-2.png" alt=""></a></li>
+									<li><a href="#" class="insta_small"><img src="images/content/instagram-small-3.png" alt=""></a></li>
+									<li><a href="#" class="insta_small"><img src="images/content/instagram-small-4.png" alt=""></a></li>
+									<li><a href="#" class="insta_small"><img src="images/content/instagram-small-1.png" alt=""></a></li> -->
 								</ul>
 								<img src="images/content/instagram-1.png" alt="" id="insta_big">
 							</div>
@@ -136,8 +140,8 @@
 								<a class="pull-right" href="#"><i class="fa fa-twitter"></i> Follow</a>
 								<div class="clear"></div>
 							</div>
-							<div class="twitter-content scrollbar-dynamic">
-								<ul>
+							<div id="example1" class="twitter-content scrollbar-dynamic">
+								<!-- <ul>
 									<li>
 										<div class="twitter-img"><a href="#"><img src="images/icons/twitter-icon.png" alt=""></a></div>
 										<div class="twitter-text">
@@ -178,27 +182,27 @@
 										</div>
 										<div class="date-time"><span>3 Jan</span></div>
 									</li>
-								</ul>
-							</div>
+								</ul> -->
+							</div>						
 						</div>
 					</div>
-				</div>		
+				<!-- </div>		 -->
 			</div>
 
 			<div class="content-4">				
 			</div>
 
 			<div id="locate" class="content-5">
-				<div class="container-fluid">
+				<!-- <div class="container-fluid">
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-12"> -->
 							<div class="heading">
 								<h4>Locate Us</h4>
 								<h2>Curb your cravings</h2>																
 							</div>
 							<div class="img-text-content">
-								<div class="map">
-									<img src="images/content/map.png" alt="">
+								<div id="map" class="map">
+									<img src="images/content/map.png" class="img-responsive" alt="">
 								</div>
 								<div class="text-content">
 									<div class="info">
@@ -228,15 +232,15 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						<!-- </div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 
 			<div id="contact" class="content-6">
-				<div class="container-fluid">
+<!-- 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-12"> -->
 							<div class="heading">
 								<h4>contact us</h4>
 								<h2>Let’s get in touch!</h2>																
@@ -279,9 +283,9 @@
 
 								</form>
 							</div>
-						</div>
+						<!-- </div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			
 		</div><!-- end container -->

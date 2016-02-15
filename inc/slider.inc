@@ -17,7 +17,7 @@
 		</div>		
 	</div>
 
-	<a href="#content-wrapper" class="scroll-to-content">	
+	<a href="#main-content" class="scroll-to-content">	
 		<div class="arrow-big"></div>		
 	</a>
 
