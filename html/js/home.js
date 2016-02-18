@@ -53,4 +53,34 @@ $(document).ready(function(){
     // twitter custom scrollbar
     $('.scrollbar-dynamic').scrollbar();
 
+    if(isMobile)
+      $('.flavour-slick').slick({
+        dots: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        responsive: [
+            {
+                breakpoint: 1099,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            }
+        ]
+      });
+
 })

@@ -95,7 +95,29 @@
     width: 40%;
   }
 }
+@media all and (max-width: 1380px) {
+  #page-wrapper .slider-wrapper div.item div.carousel-caption div.caption-text h1 {
+    font-size: 99px;
+    line-height: 110px;
+  }
+  .home .content-extra .img-text-content .text-content {
+    width: 33.08%;
+  }
+  .home .content-extra .img-text-content .img-content {
+    width: 54.68%;
+  }
+  .home .content-extra .img-text-content-2 .img-content {
+    width: 30.08%;
+  }
+  .home .content-extra .img-text-content-2 .text-content {
+    width: 58.68%;
+  }
+}
 @media all and (max-width: 1200px) {
+  #page-wrapper .slider-wrapper div.item div.carousel-caption div.caption-text h1 {
+    font-size: 79px;
+    line-height: 90px;
+  }
   .home .content-1 .text-content {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -109,10 +131,27 @@
   .home .content-3 .img-text-content .twitter {
     width: 40%;
   }
+  .home .content-extra .img-text-content .text-content {
+    width: 33.08%;
+  }
+  .home .content-extra .img-text-content .img-content {
+    width: 54.68%;
+  }
+  .home .content-extra .img-text-content-2 .img-content {
+    width: 30.08%;
+  }
+  .home .content-extra .img-text-content-2 .text-content {
+    width: 57.68%;
+  }
 }
 @media all and (max-width: 1024px) {
   #page-wrapper .slider-wrapper div.item div.carousel-caption div.caption {
-    left: -55%;
+    left: -30%;
+    top: 120px;
+  }
+  #page-wrapper .slider-wrapper div.item div.carousel-caption div.caption .caption-text h1 {
+    font-size: 59px;
+    line-height: 70px;
   }
   #page-wrapper .slider-wrapper div.item div.carousel-caption div.caption div.caption-img {
     width: 430px;
@@ -124,6 +163,50 @@
     width: 45%;
   }
   #page-wrapper #content-wrapper .home .content-5 .img-text-content .text-content {
+    width: 45%;
+  }
+  #page-wrapper #content-wrapper .home .content-extra .img-text-content .img-content {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #page-wrapper #content-wrapper .home .content-extra .img-text-content .img-content img {
+    width: 100%;
+  }
+  #page-wrapper #content-wrapper .home .content-extra .img-text-content .text-content {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #page-wrapper #content-wrapper .home .content-extra .img-text-content-2 {
+    margin-top: 40px;
+  }
+  #page-wrapper #content-wrapper .home .content-extra .img-text-content-2 .img-content {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  #page-wrapper #content-wrapper .home .content-extra .img-text-content-2 .img-content img {
+    margin: 0 auto;
+  }
+  #page-wrapper #content-wrapper .home .content-extra .img-text-content-2 .text-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #page-wrapper #content-wrapper .flavour .content-7 {
+    padding: 75px 40px 75px 40px;
+  }
+  #page-wrapper #content-wrapper .flavour .content-7 .img-text-content .img-content {
+    width: 45%;
+  }
+  #page-wrapper #content-wrapper .flavour .content-7 .img-text-content .text-content {
+    width: 45%;
+  }
+  #page-wrapper #content-wrapper .contact .content-2 {
+    padding: 75px 40px 75px 40px;
+  }
+  #page-wrapper #content-wrapper .contact .content-2 .img-text-content .img-content {
+    width: 45%;
+  }
+  #page-wrapper #content-wrapper .contact .content-2 .img-text-content .text-content {
     width: 45%;
   }
 }
@@ -162,10 +245,15 @@
   }
   #page-wrapper #content-wrapper #menu-logo-wrapper .main-menu .pull-left {
     margin-top: 20px;
-    position: relative;
   }
   #page-wrapper #content-wrapper #menu-logo-wrapper .main-menu .main-nav-wrapper {
     position: absolute;
+    width: 100%;
+    padding-left: 20px;
+    left: 0;
+  }
+  #page-wrapper #content-wrapper #menu-logo-wrapper .main-menu .main-nav-wrapper.mobile-show-nav {
+    background: white;
   }
   #page-wrapper #content-wrapper #menu-logo-wrapper .main-menu .main-nav-wrapper ul {
     padding-top: 35px;
@@ -203,6 +291,9 @@
     display: block;
     width: 100%;
     margin-bottom: 20px;
+  }
+  #page-wrapper #content-wrapper .home .content-2 .img-text-content .each-flavour img {
+    margin: 0 auto;
   }
   #page-wrapper #content-wrapper .home .content-2 .img-text-content .each-flavour:last-child {
     margin-bottom: 0px;
@@ -251,6 +342,55 @@
   #page-wrapper #content-wrapper .home .content-6 .contact-form .right-fields {
     width: 100%;
     display: block;
+  }
+  #page-wrapper #content-wrapper .contact .content-1 .contact-form .left-fields {
+    width: 100%;
+  }
+  #page-wrapper #content-wrapper .contact .content-1 .contact-form .right-fields {
+    width: 100%;
+  }
+  #page-wrapper #content-wrapper .contact .content-1 .contact-form .right-fields div.dropdown_short {
+    width: 29%!important;
+    margin-right: 3.9%;
+  }
+  #page-wrapper #content-wrapper .contact .content-1 .contact-form .right-fields .child-field:nth-of-type(1) {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  #page-wrapper #content-wrapper .contact .content-1 .contact-form .right-fields .child-field:nth-of-type(2) {
+    width: 100%;
+  }
+  #page-wrapper #content-wrapper .contact .content-1 .contact-form .common-fields {
+    width: 100%;
+  }
+  #page-wrapper #content-wrapper .flavour .img-text-content {
+    padding-top: 20px;
+  }
+  #page-wrapper #content-wrapper .flavour .img-text-content .each-flavour {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #page-wrapper #content-wrapper .flavour .img-text-content .each-flavour:last-child {
+    margin-bottom: 0px;
+  }
+  #page-wrapper #content-wrapper .flavour .content-7 {
+    padding: 50px 20px;
+  }
+  #page-wrapper #content-wrapper .flavour .content-7 .heading h4 {
+    margin-bottom: 0px;
+  }
+  #page-wrapper #content-wrapper .flavour .content-7 .img-text-content {
+    padding-top: 40px;
+  }
+  #page-wrapper #content-wrapper .contact .content-2 {
+    padding: 50px 20px;
+  }
+  #page-wrapper #content-wrapper .contact .content-2 .heading h4 {
+    margin-bottom: 0px;
+  }
+  #page-wrapper #content-wrapper .contact .content-2 .img-text-content {
+    padding-top: 40px;
   }
   footer#footer-wrapper {
     padding: 20px 20px;
@@ -323,6 +463,50 @@
     display: block;
     margin-bottom: 20px;
   }
+  #page-wrapper #content-wrapper .flavour .content-7 .img-text-content {
+    padding-top: 40px;
+  }
+  #page-wrapper #content-wrapper .flavour .content-7 .img-text-content .img-content {
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+  }
+  #page-wrapper #content-wrapper .flavour .content-7 .img-text-content .text-content {
+    width: 100%;
+  }
+  #page-wrapper #content-wrapper .flavour .content-7 .img-text-content .text-content .info {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  #page-wrapper #content-wrapper .contact .content-2 .img-text-content {
+    padding-top: 40px;
+  }
+  #page-wrapper #content-wrapper .contact .content-2 .img-text-content .img-content {
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+  }
+  #page-wrapper #content-wrapper .contact .content-2 .img-text-content .text-content {
+    width: 100%;
+  }
+  #page-wrapper #content-wrapper .contact .content-2 .img-text-content .text-content .info {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media all and (max-width: 680px) {
+  .home .content-extra .img-text-content-2 .text-content .each-col {
+    width: 100%;
+    border-right: 0px!important;
+  }
+  .home .content-extra .img-text-content-2 .text-content .each-col:nth-of-type(1) {
+    padding-right: 0px;
+  }
+  .home .content-extra .img-text-content-2 .text-content .each-col:nth-of-type(2) {
+    padding-left: 0px;
+  }
 }
 @media all and (max-width: 414px) {
   #page-wrapper .slider-wrapper div.item div.carousel-caption div.caption div.caption-img {
@@ -337,6 +521,15 @@
   }
   #page-wrapper #content-wrapper .home .content-3 .img-text-content .twitter .twitter-content ul li .date-time {
     width: 14.4%;
+  }
+  #page-wrapper #content-wrapper .home .content-5 .img-text-content .text-content .each-col {
+    width: 100%;
+  }
+  #page-wrapper #content-wrapper .flavour .content-7 .img-text-content .text-content .each-col {
+    width: 100%;
+  }
+  #page-wrapper #content-wrapper .contact .content-2 .img-text-content .text-content .each-col {
+    width: 100%;
   }
 }
 @media all and (max-width: 375px) {

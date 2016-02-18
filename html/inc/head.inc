@@ -22,6 +22,7 @@
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/mobile-style.css" />
 <link rel="stylesheet" href="js/plugins/jquery.scrollbar.css" />
+<link rel="stylesheet" href="js/plugins/slick.css" />
 
 <!-- JS -->
 <script type="text/javascript" src="js/vendors/jquery/jquery-1.11.1.min.js"></script>
@@ -36,6 +37,7 @@
 <script type="text/javascript" src="js/plugins/instafeed.min.js"></script>
 <script type="text/javascript" src="js/plugins/twitterFetcher.full.js"></script>
 <script type="text/javascript" src="js/plugins/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/plugins/slick.min.js"></script>
 
 <script type="text/javascript" src="js/plugins/jquery.scrollbar.js"></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>

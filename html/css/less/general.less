@@ -128,8 +128,9 @@ strong {
 }
 
 .heading-6-font {
-  // .harriet-text-medium-italic;
-  // font-size: 17px;
+  .hurmegeometricsans2;
+  font-size: 13px;
+  line-height: 23px;
 }
 
 //    ____ _____ _   _ _____ ____      _    _
@@ -181,9 +182,9 @@ html, body {
     .heading-5-font;
   }
 
-  // h6 {
-  //   .heading-6-font;
-  // }
+  h6 {
+    .heading-6-font;
+  }
 
   p {
     .body-font;
@@ -252,8 +253,8 @@ html, body {
         background-size:cover;
       }    
       .bg1 {
-        // background-image:url('../images/content/background.jpg')!important;
-        // background-position: left bottom;
+        background-image:url('../images/content/bg.jpg')!important;
+        background-position: left bottom;
       }
       .item {
         background-color: @white;
@@ -341,15 +342,18 @@ html, body {
 
     div.item {
       div.carousel-caption {
-        width: 1300px;
-        position: absolute;
-        left: 48%;
-        top: 0%;
+        width: 800px;
+        position: fixed;
+        // left: 48%;
+        // top: 0%;
+        left: 60%;
+        top: 28%;
         padding-top: 0px;
         padding-bottom: 0px;
         div.caption {
           position: relative; 
-          left: -50%;
+          // left: -50%;
+          left: -33%;
         }
         div.caption-img {
           display: inline-block;
@@ -359,12 +363,10 @@ html, body {
         }
         div.caption-text {
           display: inline-block;          
-          width: 740px;
+          // width: 740px;
           // width: 38.85%;
           // margin-left: -110px;
           vertical-align: middle;
-          position: relative;
-          top: -40px;
           h1 {
             text-transform: uppercase;
             text-shadow: none;
@@ -535,26 +537,34 @@ hr.small {
     top: 5px;
 }
 
-.cta {
-  // .gotham-medium;
+.cta {  
   text-transform: uppercase;
   font-size: 12px;  
-  letter-spacing: 0.075em;  
-  .opacity(0.8);
-  // border: 1px solid @light-blue;
-  // color: @light-grey;
-  // padding: 10px 20px;
+  letter-spacing: 0.05em;  
+  // .opacity(0.8);
+  border: 1px solid @cta-border;  
+  padding: 3px 14px;
+  background: none;
 
-  i {
-    font-size: 17px;
-    line-height: 24px;
-    letter-spacing: 0.1em;
+  i.mail {
+    background: url('../images/icons/mail-icon.png') no-repeat;
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  span {
+    display: inline-block!important;
+    vertical-align: middle;
+    .hurmegeometricsans2-black!important;
+    color: @dark-grey-2!important;
   }
 
   &:hover {
-    .opacity(1);
-    // border-color: @dark-blue; 
-    // color: @dark-blue; 
+    // .opacity(1);    
+    color: @dark-grey;
+    border-color: @dark-grey;    
   }
 }
 
@@ -564,4 +574,41 @@ hr.small {
   width: 1px;
   margin: 0 auto;
   margin-right: 50px;
+}
+
+.slick-prev{
+  top: 183px;
+}
+.slick-next{
+  top: 183px;
+}
+
+.slick-prev,
+.slick-next{
+  position: absolute;
+  border: 0px!important;
+  background: none!important;
+  &:before{
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 12px;
+  }
+}
+
+.slick-prev{
+  //left: -23px;
+  // left: -13px;
+  left: 20px;
+
+  &:before{
+    content: "\f053";
+  }
+}
+.slick-next{
+  //right: -23px;
+  // right: -13px;
+  right: 20px;
+
+  &:before{
+    content: "\f054";
+  }
 }
