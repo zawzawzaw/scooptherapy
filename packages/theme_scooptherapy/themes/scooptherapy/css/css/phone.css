@@ -1,0 +1,56 @@
+@media all and (max-width: 414px) {
+  #page-wrapper .slider-wrapper div.item div.carousel-caption div.caption div.caption-img {
+    width: 40%;
+  }
+  #page-wrapper #content-wrapper .home .content-3 .img-text-content .twitter .twitter-content ul li .twitter-img {
+    width: 19%;
+  }
+  #page-wrapper #content-wrapper .home .content-3 .img-text-content .twitter .twitter-content ul li .twitter-text {
+    width: 62%;
+  }
+  #page-wrapper #content-wrapper .home .content-3 .img-text-content .twitter .twitter-content ul li .date-time {
+    width: 14.4%;
+  }
+}
+@media all and (max-width: 375px) {
+  #page-wrapper .slider-wrapper div.item div.carousel-caption div.caption div.caption-img {
+    width: 35%;
+  }
+}
+@media all and (max-width: 320px) {
+  #page-wrapper .slider-wrapper div.item div.carousel-caption div.caption div.caption-img {
+    width: 30%;
+  }
+  #page-wrapper #content-wrapper #menu-logo-wrapper.white-version {
+    padding: 11px 0px;
+  }
+  #page-wrapper #content-wrapper #menu-logo-wrapper .main-menu {
+    padding: 0 20px;
+  }
+  #page-wrapper #content-wrapper #menu-logo-wrapper .main-menu .pull-left {
+    margin-top: 15px;
+  }
+  #page-wrapper #content-wrapper #menu-logo-wrapper .main-menu .pull-left .toggle-menu-container .toggle-menu a .nav-bar {
+    width: 26px;
+    height: 3px;
+    margin: 3px auto;
+  }
+  #page-wrapper #content-wrapper #menu-logo-wrapper .main-menu .logo {
+    width: 77%;
+  }
+  #page-wrapper #content-wrapper #menu-logo-wrapper .main-menu .logo img {
+    width: 100%;
+  }
+  #page-wrapper #content-wrapper .home .content-3 .img-text-content .twitter .twitter-content ul li .twitter-img {
+    width: 14.78%;
+  }
+  #page-wrapper #content-wrapper .home .content-3 .img-text-content .twitter .twitter-content ul li .twitter-img img {
+    width: 100%;
+  }
+  #page-wrapper #content-wrapper .home .content-3 .img-text-content .twitter .twitter-content ul li .twitter-text {
+    width: 63%;
+  }
+  #page-wrapper #content-wrapper .home .content-3 .img-text-content .twitter .twitter-content ul li .date-time {
+    width: 15.4%;
+  }
+}

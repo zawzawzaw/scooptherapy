@@ -129,32 +129,6 @@ $(document).ready(function(){
         TweenMax.to($(window), 1.2, {scrollTo:{y:target_y,autoKill: false}, ease:Quad.easeInOut});
     });
 
-    function scrollToThis(currentId){
-        if(currentId=='#about')
-            var scrollTopPos = $(currentId).offset().top - 78;
-        else
-            var scrollTopPos = $(currentId).offset().top - 25;         
-
-        TweenMax.to($(window), 1.2, {
-            scrollTo: { y:scrollTopPos, autoKill: false }, 
-            ease:Quad.easeInOut,
-            onComplete: function() {
-                $window.disablescroll("undo");
-            }
-        });
-
-        // $('body').animate({
-        //     scrollTop: scrollTopPos
-        // }, 1200);
-    }
-
-    $('.main-nav li a').on('click', function(e){
-        e.preventDefault();
-        // $('.active-nav').removeClass('active-nav');
-        // $(this).addClass('active-nav')
-        scrollToThis($(this).attr('href'));
-    });
-
     ///////
     ///////
     ///////
@@ -298,7 +272,7 @@ $(document).ready(function(){
         return new google.maps.LatLng(lat, lng);
     }
 
-    var ScoopLatlng = setMarkerLatLng(1.3239576,103.8506361);
+    var ScoopLatlng = setMarkerLatLng(1.3046433,103.8996599);
     var mapOptions = {
       mapTypeControlOptions: {  
           mapTypeIds: ['Styled']
