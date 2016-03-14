@@ -32,12 +32,14 @@
 					    if ($c->isEditMode()):
 						   $a->display($c);								
 						else:
-						   	$b = $a->getAreaBlocksArray($c);
-						   	foreach ($b as $i => $block):
+						   	$b = $a->getAreaBlocksArray($c); ?>
+					<div class="hidden-xs hidden-sm hidden-md">
+					<?php   foreach ($b as $i => $block):
 						   		$fileID = $block->getInstance()->getFileID();
 						   		$title = $block->getInstance()->getTitle();
 						   		$alttext = $block->getInstance()->getAltText();
 						      	$image = $block->getInstance()->getImageObject($fileID); ?>
+
 						      	<?php if($i==0): ?>
 						      		<div class="each-row"><!-- star first row -->
 						      	<?php elseif(($i % 6) == 0): ?>
@@ -48,13 +50,26 @@
 											<img src="<?= $image->src; ?>" alt="">
 											<h4><span><?= $title; ?></span><?php if($alttext): ?><i class="tag"></i><?php endif; ?></h4>
 										</div>								
-					<?php
-						   	endforeach;
-					?>
+					<?php  	endforeach;	?>
 						 	  		</div><!-- end each-row if i ended without reaching new row -->
-					<?php
-						endif;
-					?>					
+					</div>
+					<div class="visible-sm visible-xs visible-md">
+						<div class="each-row">
+						<?php foreach ($b as $i => $block):
+						   		$fileID = $block->getInstance()->getFileID();
+						   		$title = $block->getInstance()->getTitle();
+						   		$alttext = $block->getInstance()->getAltText();
+						      	$image = $block->getInstance()->getImageObject($fileID); ?>
+												
+							<div class="<?= $i; ?> each-flavour">
+								<img src="<?= $image->src; ?>" alt="">
+								<h4><span><?= $title; ?></span><?php if($alttext): ?><i class="tag"></i><?php endif; ?></h4>
+							</div>						
+
+						<?php endforeach; ?>
+						</div>
+					</div>	
+					<?php endif; ?>				
 				</div>
 			</div>
 
@@ -185,7 +200,7 @@
 				</div>
 			</div>
 
-			<div id="desserts-menu" class="content-5">
+			<div id="desserts" class="content-5">
 				<div class="img-text-content">
 					<div class="sub-heading">
 						<?php
@@ -256,6 +271,6 @@
 
 	</div>
 
-	<script type="text/javascript" src="<?= $view->getThemePath() ?>js/flavour.js"></script>
+	<script type="text/javascript" src="<?= $view->getThemePath() ?>/js/flavour.js"></script>
 
 <?php $view->inc('elements/footer.php'); ?>

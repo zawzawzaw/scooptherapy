@@ -29,6 +29,9 @@
 			}
 			.each-text-content {
 				margin-bottom: 23px;
+				&:last-child {
+					margin-bottom: 0px;
+				}
 			}
 		}
 	}
@@ -424,9 +427,12 @@
 				text-align: left;
 				.each-col {
 					display: inline-block;
-					width: 38.7%;
-					margin-right: 10%;
+					width: 38.7%;					
 					vertical-align: top;					
+					&:first-child {
+						margin-right: 5%;
+						width: 43%;
+					}
 					.info {
 	    				vertical-align: top;	    				
 						text-align: left;

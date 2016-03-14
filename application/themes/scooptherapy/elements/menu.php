@@ -13,11 +13,11 @@
 			</div>
 			<div class="main-nav-wrapper">
 				<ul class="main-nav">
-					<li><a href="<?php echo View::url('/'); ?>#about">About</a></li>
-					<li><a href="<?php echo View::url('/'); ?>#flavours">Flavours</a></li>
-					<li><a href="<?php echo View::url('/'); ?>#news">News</a></li>
-					<li><a href="<?php echo View::url('/'); ?>#locate">Locate</a></li>
-					<li><a href="<?php echo View::url('/'); ?>#wholesale">Wholesale</a></li>
+					<li><a href="<?php echo View::url('/'); ?>#_about">About</a></li>
+					<li><a href="<?php echo View::url('/'); ?>#_flavours">Flavours</a></li>
+					<li><a href="<?php echo View::url('/'); ?>#_wholesale">Wholesale</a></li>
+					<li><a href="<?php echo View::url('/'); ?>#_news">News</a></li>
+					<li><a href="<?php echo View::url('/'); ?>#_locate">Locate</a></li>					
 				</ul>				
 			</div>
 		</div>

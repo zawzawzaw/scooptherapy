@@ -20,11 +20,14 @@ $(document).ready(function(){
  	$('.submit-contact-form').on('click', function(e){
         e.preventDefault();
 
+        var submitBtn = $(this);
         var icon = $(this).children('i');
 
         if(form.valid()) {
 
-	        icon.addClass('fa fa-spinner').removeClass('mail');	      
+	        icon.addClass('fa fa-spinner').removeClass('mail');	  
+
+	        submitBtn.attr("disabled", true);    
 
 	        $.ajax({
 	        	type: form.attr('method'),
@@ -34,6 +37,8 @@ $(document).ready(function(){
 		        // Optionally alert the user of success here...
 		        $('.response-msg').html(data)
 		        icon.removeClass('fa fa-spinner').addClass('mail');
+
+		        submitBtn.attr("disabled", false);
 
 	      	}).fail(function(data) {
 		        // Optionally alert the user of an error here...

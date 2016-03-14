@@ -68,7 +68,7 @@
 				<div id="wholesale" class="content-extra">
 
 					<div class="img-text-content">
-						<div class="img-content visible-xs visible-sm">
+						<div class="img-content visible-xs visible-sm visible-md">
 							<img src="<?= $view->getThemePath() ?>/images/content/contact-us-content.png" class="img-responsive">
 						</div>
 						<div class="text-content">
@@ -77,7 +77,7 @@
 							    $a->display($c);
 							?>							
 						</div>
-						<div class="img-content hidden-xs hidden-sm">
+						<div class="img-content hidden-xs hidden-sm hidden-md">
 							<?php
 							    $a = new Area('Contact Us Image');							    
 							    $a->display($c);

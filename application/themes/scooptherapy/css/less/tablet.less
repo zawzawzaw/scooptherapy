@@ -21,9 +21,46 @@
 			}
 		}
 		#content-wrapper {
+			#menu-logo-wrapper {
+				.main-menu {
+					padding: 0 20px;
+					.toggle-menu-container {
+						margin-right: 0px;
+					}
+					.pull-left {
+						margin-top: 15px;
+						// position: relative;
+					}
+					.main-nav-wrapper {
+						position: absolute;						
+						width: 100%;											    
+					    padding-left: 20px;
+					    left: 0;
+					    top: 77px;
+					    height: 0px;
+					    visibility: hidden;
+						.opacity(0);
+						.transition(.10s);
+					    &.mobile-show-nav {
+					    	background: white;
+							height: auto!important;
+							visibility: visible;
+							.opacity(1);
+							border-top: 1px solid #cccccc;
+						}
+						ul {
+							padding-top: 35px;
+							padding-bottom: 10px;
+							li {
+								display: block;
+								margin-bottom: 20px;
+							}
+						}						
+					}
+				}
+			}
 			.home {						
-				.content-5 {
-					padding: 75px 40px 75px 40px;
+				.content-5 {					
 					.img-text-content {
 						.img-content {
 							width: 45%;							
@@ -66,7 +103,6 @@
 			}
 			.flavour {
 				.content-7 {
-					padding: 75px 40px 75px 40px;
 					.img-text-content {
 						.img-content {
 							width: 45%;							
@@ -79,7 +115,6 @@
 			}
 			.contact {
 				.content-2 {
-					padding: 75px 40px 75px 40px;
 					.img-text-content {
 						.img-content {
 							width: 45%;							

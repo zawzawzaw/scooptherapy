@@ -824,10 +824,10 @@ hr.small {
   opacity: 0;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
   filter: alpha(opacity=0);
-  -webkit-transition: all 0.8s ease-out;
-  -moz-transition: all 0.8s ease-out;
-  -o-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 #content-wrapper #menu-logo-wrapper .main-menu .main-nav-wrapper ul.main-nav.show-nav {
   visibility: visible;
@@ -1082,6 +1082,9 @@ footer#footer-wrapper ul li a:hover {
 }
 .home .content-1 .text-content .each-text-content {
   margin-bottom: 23px;
+}
+.home .content-1 .text-content .each-text-content:last-child {
+  margin-bottom: 0px;
 }
 .home .content-2 {
   padding: 70px 40px 100px 40px;
@@ -1435,8 +1438,11 @@ footer#footer-wrapper ul li a:hover {
 .home .content-5 .img-text-content .text-content .each-col {
   display: inline-block;
   width: 38.7%;
-  margin-right: 10%;
   vertical-align: top;
+}
+.home .content-5 .img-text-content .text-content .each-col:first-child {
+  margin-right: 5%;
+  width: 43%;
 }
 .home .content-5 .img-text-content .text-content .each-col .info {
   vertical-align: top;
@@ -1831,7 +1837,7 @@ footer#footer-wrapper ul li a:hover {
   margin-bottom: 25px;
 }
 .contact .content-1 {
-  padding: 140px 40px 100px 40px;
+  padding: 140px 20px 100px 20px;
 }
 .contact .content-1 .heading {
   text-align: center;

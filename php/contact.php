@@ -106,7 +106,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		    echo 'Message could not be sent.';
 		    echo 'Mailer Error: ' . $mail->ErrorInfo;
 		} else {
-		    echo 'Thank you for getting in touch with us! Our team will be in touch with you within 48 hours.';
+		    echo 'Thank you for getting in touch! Our team will be in contact within 48 hours to assist you. Good day!';
 		}
 
 	}else {

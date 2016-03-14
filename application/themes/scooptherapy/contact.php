@@ -12,7 +12,7 @@
 					<h2>Let’s get in touch!</h2>																
 				</div>
 				<div class="contact-form">
-					<form id="contact-form" action="php/contact.php" method="post">
+					<form id="contact-form" action="http://scooptherapy.com/php/contact.php" method="post">
 						<div class="left-fields">
 							<div class="field">
 								<label for="enquiry_type">*Enquiry Type</label>

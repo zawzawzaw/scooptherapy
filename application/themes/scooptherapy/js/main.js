@@ -35,10 +35,10 @@ $(document).ready(function(){
 
     var scrolled = false;
     var firstScroll = true;
-    var mainContentOffset = $('#main-content').offset().top - 78;
+    var mainContentOffset = $('#main-content').offset().top - 77;
 
     $(window).on('resize', function(){
-        mainContentOffset = $('#main-content').offset().top - 78; // change if window resize
+        mainContentOffset = $('#main-content').offset().top - 77; // change if window resize
     });
 
     function scrollToContent() {
@@ -47,6 +47,7 @@ $(document).ready(function(){
         if(scrollPos >= 0 && scrollPos <= mainContentOffset) {
 
             if(firstScroll==true) {
+
                 firstScroll = false;
 
                 var $window = $(window);
@@ -55,7 +56,7 @@ $(document).ready(function(){
                     handleScrollbar: false
                 });
 
-                var target_y = $('#content-wrapper').offset().top - 78; // minus out the height of menu 
+                var target_y = $('#content-wrapper').offset().top - 77; // minus out the height of menu 
 
                 TweenMax.to($(window), 1.2, {
                     scrollTo: { y:target_y, autoKill: false }, 
@@ -94,8 +95,10 @@ $(document).ready(function(){
             $('#menu-logo-wrapper').addClass('white-version');
             $('#mobile-menu-logo-wrapper').addClass('white-version');
         }else {
-            $('#menu-logo-wrapper').removeClass('white-version');
-            $('#mobile-menu-logo-wrapper').removeClass('white-version');
+            if($('.main-nav').hasClass('show-nav')==false) {
+                $('#menu-logo-wrapper').removeClass('white-version');
+                $('#mobile-menu-logo-wrapper').removeClass('white-version');    
+            }            
         }
     }
 
@@ -135,8 +138,14 @@ $(document).ready(function(){
 
     $('.toggle-menu').on('click', function(e){
         e.preventDefault();     
-        $('.main-nav').toggleClass('show-nav');
-        $('.main-nav').parent().toggleClass('mobile-show-nav');
+        $('.main-nav').toggleClass('show-nav'); // show menu
+        $('.main-nav').parent().toggleClass('mobile-show-nav'); // add white background under menu
+
+        var scrollPos = $(window).scrollTop();
+    
+        if( ( scrollPos < mainContentOffset ) ) {      
+            $('#menu-logo-wrapper').toggleClass('white-version');
+        }
     });
 
     $(".carousel").swiperight(function() {  
@@ -272,7 +281,7 @@ $(document).ready(function(){
         return new google.maps.LatLng(lat, lng);
     }
 
-    var ScoopLatlng = setMarkerLatLng(1.3046433,103.8996599);
+    var ScoopLatlng = setMarkerLatLng(1.3046231,103.9013626);
     var mapOptions = {
       mapTypeControlOptions: {  
           mapTypeIds: ['Styled']
