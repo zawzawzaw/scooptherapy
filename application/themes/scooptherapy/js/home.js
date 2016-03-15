@@ -34,15 +34,20 @@ $(document).ready(function(){
     $('.main-nav li a').on('click', function(e){
         e.preventDefault();
         var mainNav = $('.main-nav');
-        if(mainNav.hasClass('show-nav')) {
-            mainNav.removeClass('show-nav');  
-        }
+        // if(mainNav.hasClass('show-nav')) {
+        //     mainNav.removeClass('show-nav');  
+        // }
         if(mainNav.parent().hasClass('mobile-show-nav')) {
             mainNav.parent().removeClass('mobile-show-nav');
         } 
 
         var url = $(this).attr('href');
         var hash = url.substring(url.indexOf('#'));
+
+        if(hash.indexOf('contact') > -1 || url.indexOf('flavour') > -1) {
+            window.location.href = url;
+            console.log('hi')
+        }
 
         hash = hash.replace('_','');
 

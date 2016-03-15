@@ -1,6 +1,11 @@
 @media all and (max-width: 1024px) {
   #page-wrapper .slider-wrapper div.item div.carousel-caption div.caption {
-    left: -55%;
+    left: -30%;
+    top: 120px;
+  }
+  #page-wrapper .slider-wrapper div.item div.carousel-caption div.caption .caption-text h1 {
+    font-size: 59px;
+    line-height: 70px;
   }
   #page-wrapper .slider-wrapper div.item div.carousel-caption div.caption div.caption-img {
     width: 430px;
@@ -12,6 +17,50 @@
     width: 45%;
   }
   #page-wrapper #content-wrapper .home .content-5 .img-text-content .text-content {
+    width: 45%;
+  }
+  #page-wrapper #content-wrapper .home .content-extra .img-text-content .img-content {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #page-wrapper #content-wrapper .home .content-extra .img-text-content .img-content img {
+    width: 100%;
+  }
+  #page-wrapper #content-wrapper .home .content-extra .img-text-content .text-content {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #page-wrapper #content-wrapper .home .content-extra .img-text-content-2 {
+    margin-top: 40px;
+  }
+  #page-wrapper #content-wrapper .home .content-extra .img-text-content-2 .img-content {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  #page-wrapper #content-wrapper .home .content-extra .img-text-content-2 .img-content img {
+    margin: 0 auto;
+  }
+  #page-wrapper #content-wrapper .home .content-extra .img-text-content-2 .text-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #page-wrapper #content-wrapper .flavour .content-7 {
+    padding: 75px 40px 75px 40px;
+  }
+  #page-wrapper #content-wrapper .flavour .content-7 .img-text-content .img-content {
+    width: 45%;
+  }
+  #page-wrapper #content-wrapper .flavour .content-7 .img-text-content .text-content {
+    width: 45%;
+  }
+  #page-wrapper #content-wrapper .contact .content-2 {
+    padding: 75px 40px 75px 40px;
+  }
+  #page-wrapper #content-wrapper .contact .content-2 .img-text-content .img-content {
+    width: 45%;
+  }
+  #page-wrapper #content-wrapper .contact .content-2 .img-text-content .text-content {
     width: 45%;
   }
 }

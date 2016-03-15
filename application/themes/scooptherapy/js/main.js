@@ -104,7 +104,7 @@ $(document).ready(function(){
 
     $(window).on('scroll', function() {        
         showHideArrow();
-        addBorder();                       
+        // addBorder();                       
         // scrollToContent();
     });
 
@@ -138,14 +138,14 @@ $(document).ready(function(){
 
     $('.toggle-menu').on('click', function(e){
         e.preventDefault();     
-        $('.main-nav').toggleClass('show-nav'); // show menu
-        $('.main-nav').parent().toggleClass('mobile-show-nav'); // add white background under menu
+    //     $('.main-nav').toggleClass('show-nav'); // show menu
+        $('.mobile-nav').parent().toggleClass('mobile-show-nav'); // add white background under menu
 
-        var scrollPos = $(window).scrollTop();
+    //     var scrollPos = $(window).scrollTop();
     
-        if( ( scrollPos < mainContentOffset ) ) {      
-            $('#menu-logo-wrapper').toggleClass('white-version');
-        }
+    //     if( ( scrollPos < mainContentOffset ) ) {      
+    //         $('#menu-logo-wrapper').toggleClass('white-version');
+    //     }
     });
 
     $(".carousel").swiperight(function() {  

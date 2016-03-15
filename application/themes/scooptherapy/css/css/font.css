@@ -6,6 +6,13 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'hurmegeometricsans2-bold';
+  src: url('../fonts/hurmegeometricsans2_bold.eot');
+  src: url('../fonts/hurmegeometricsans2_bold.eot?#iefix') format('embedded-opentype'), url('../fonts/hurmegeometricsans2_bold.woff') format('woff'), url('../fonts/hurmegeometricsans2_bold.ttf') format('truetype'), url('../fonts/hurmegeometricsans2_bold.svg#hurmegeometricsans2_bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'hurmegeometricsans2';
   src: url('../fonts/hurmegeometricsans2.eot');
   src: url('../fonts/hurmegeometricsans2.eot?#iefix') format('embedded-opentype'), url('../fonts/hurmegeometricsans2.woff') format('woff'), url('../fonts/hurmegeometricsans2.ttf') format('truetype'), url('../fonts/hurmegeometricsans2.svg#hurmegeometricsans2') format('svg');
@@ -28,6 +35,9 @@
 }
 .hurmegeometricsans2-black {
   font-family: "hurmegeometricsans2-black", sans-serif;
+}
+.hurmegeometricsans2-bold {
+  font-family: "hurmegeometricsans2-bold", sans-serif;
 }
 .hurmegeometricsans2 {
   font-family: "hurmegeometricsans2", sans-serif;

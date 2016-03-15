@@ -1,5 +1,7 @@
 <?php $view->inc('elements/header.php'); ?>
 
+	<?php $view->inc('elements/mobile-menu.php'); ?>
+
 	<div id="content-wrapper">
 
 		<?php $view->inc('elements/menu.php'); ?>
@@ -33,42 +35,21 @@
 						   $a->display($c);								
 						else:
 						   	$b = $a->getAreaBlocksArray($c); ?>
-					<div class="hidden-xs hidden-sm hidden-md">
-					<?php   foreach ($b as $i => $block):
-						   		$fileID = $block->getInstance()->getFileID();
-						   		$title = $block->getInstance()->getTitle();
-						   		$alttext = $block->getInstance()->getAltText();
-						      	$image = $block->getInstance()->getImageObject($fileID); ?>
+					
+							<div class="each-row">
+							<?php foreach ($b as $i => $block):
+							   		$fileID = $block->getInstance()->getFileID();
+							   		$title = $block->getInstance()->getTitle();
+							   		$alttext = $block->getInstance()->getAltText();
+							      	$image = $block->getInstance()->getImageObject($fileID); ?>
+													
+								<div class="<?= $i; ?> each-flavour">
+									<img src="<?= $image->src; ?>" alt="">
+									<h4><span><?= $title; ?></span><?php if($alttext): ?><i class="tag"></i><?php endif; ?></h4>
+								</div>						
 
-						      	<?php if($i==0): ?>
-						      		<div class="each-row"><!-- star first row -->
-						      	<?php elseif(($i % 6) == 0): ?>
-						      		</div><!-- end each-row after reaching 6 -->
-						      		<div class="each-row"><!-- start new row -->
-						      	<?php endif; ?>
-										<div class="<?= $i; ?> each-flavour">
-											<img src="<?= $image->src; ?>" alt="">
-											<h4><span><?= $title; ?></span><?php if($alttext): ?><i class="tag"></i><?php endif; ?></h4>
-										</div>								
-					<?php  	endforeach;	?>
-						 	  		</div><!-- end each-row if i ended without reaching new row -->
-					</div>
-					<div class="visible-sm visible-xs visible-md">
-						<div class="each-row">
-						<?php foreach ($b as $i => $block):
-						   		$fileID = $block->getInstance()->getFileID();
-						   		$title = $block->getInstance()->getTitle();
-						   		$alttext = $block->getInstance()->getAltText();
-						      	$image = $block->getInstance()->getImageObject($fileID); ?>
-												
-							<div class="<?= $i; ?> each-flavour">
-								<img src="<?= $image->src; ?>" alt="">
-								<h4><span><?= $title; ?></span><?php if($alttext): ?><i class="tag"></i><?php endif; ?></h4>
-							</div>						
-
-						<?php endforeach; ?>
-						</div>
-					</div>	
+							<?php endforeach; ?>
+							</div>
 					<?php endif; ?>				
 				</div>
 			</div>
@@ -155,48 +136,6 @@
 					<?php
 						endif;
 					?>							
-				</div>
-			</div>
-
-			<div id="seasonal" class="content-4">
-				<div class="img-text-content">
-					<div class="sub-heading">
-						<?php
-						    $a = new Area('Flavour 4 Title');							     	
-						    $a->display($c);
-						?>							
-					</div>
-					<?php
-					    $a = new Area('Flavours 4 Content');
-					    $a->setBlockWrapperStart('<div class="each-flavour">');
-						$a->setBlockWrapperEnd('</div>');
-
-					    if ($c->isEditMode()):
-						   $a->display($c);								
-						else:
-						   	$b = $a->getAreaBlocksArray($c);
-						   	foreach ($b as $i => $block):
-						   		$fileID = $block->getInstance()->getFileID();
-						   		$title = $block->getInstance()->getTitle();
-						   		$alttext = $block->getInstance()->getAltText();
-						      	$image = $block->getInstance()->getImageObject($fileID); ?>
-						      	<?php if($i==0): ?>
-						      		<div class="each-row"><!-- star first row -->
-						      	<?php elseif(($i % 6) == 0): ?>
-						      		</div><!-- end each-row after reaching 6 -->
-						      		<div class="each-row"><!-- start new row -->
-						      	<?php endif; ?>
-										<div class="<?= $i; ?> each-flavour">
-											<img src="<?= $image->src; ?>" alt="">
-											<h4><span><?= $title; ?></span><?php if($alttext): ?><i class="tag"></i><?php endif; ?></h4>
-										</div>
-					<?php
-						   	endforeach;
-					?>
-						 	  		</div><!-- end each-row if i ended without reaching new row -->
-					<?php
-						endif;
-					?>									
 				</div>
 			</div>
 

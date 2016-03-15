@@ -1,0 +1,6 @@
+body {
+  background: transparent url(../../images/background.png) repeat scroll;
+}
+div.ccm-page {
+  position: relative;
+}

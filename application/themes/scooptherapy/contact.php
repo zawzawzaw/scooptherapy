@@ -1,4 +1,6 @@
 <?php $view->inc('elements/header.php'); ?>
+	
+	<?php $view->inc('elements/mobile-menu.php'); ?>
 
 	<div id="content-wrapper">
 

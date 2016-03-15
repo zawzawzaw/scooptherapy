@@ -1,0 +1,32 @@
+/* Base page */
+/* Dashboard form actions wrapper */
+/* Menus In Page */
+/* Checkboxes and stars in search results above menus */
+/* Inline Editing in Page */
+/* Inline Editing with Editable Fields */
+/* Dropdown Menus */
+/* Status Bar (below concrete5 toolbar and panels) */
+/* Page alert (blue boxes) –similar to dashboard help but at the page level. Should come below the dialog overlay and the intelligent search */
+/* Panels */
+/* this is the overlay over the main content. must come below the panel z-index */
+/* Draggables */
+/* Main concrete5 toolbar */
+/* Disable Toolbar (over toolbar) */
+/* Page help – below panel detail and below widget overlay */
+/* USED to come above widget overlay so we could show it while the dashboard panel is open, but moved to below panel
+/* overlay because it makes it ambiguous whether help is available in the lefthand panel or not */
+/* Show the toolbar over the dialog/widget overlay – used during help guided tours */
+/* Dashboard Help Notifications – has to come BELOW the modal dialog stuff, because it's not really an ephemeral notification */
+/* also has to come below the dashboard toolbar */
+/* Inline Editing Toolbar - has to come above disabled toolbar */
+/* Main concrete5 toolbar - has to come above dashboard help notifications because of stupid webkit compositing */
+/* Intelligent Search */
+/* Dialogs */
+/* Magnific Popup –has to come above dialogs because it might get called from a dialog*/
+/* Redactor dropdown –can be either inline OR in a dialog box so we have to come above dialog. Hopefully this doesn't
+cause other problems */
+/* Dialog Content */
+/* Search Checkboxes */
+/* Dialog Chrome */
+/* Tooltips and hovers in dialogs */
+/* Edit Response HUDs - should come above modal dialog stuff. */

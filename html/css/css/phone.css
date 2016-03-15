@@ -1,6 +1,19 @@
+@media all and (max-width: 680px) {
+  .home .content-extra .img-text-content-2 .text-content .each-col {
+    width: 100%;
+    border-right: 0px!important;
+  }
+  .home .content-extra .img-text-content-2 .text-content .each-col:nth-of-type(1) {
+    padding-right: 0px;
+  }
+  .home .content-extra .img-text-content-2 .text-content .each-col:nth-of-type(2) {
+    padding-left: 0px;
+  }
+}
 @media all and (max-width: 414px) {
   #page-wrapper .slider-wrapper div.item div.carousel-caption div.caption div.caption-img {
     width: 40%;
+    left: 0%;
   }
   #page-wrapper #content-wrapper .home .content-3 .img-text-content .twitter .twitter-content ul li .twitter-img {
     width: 19%;
@@ -10,6 +23,15 @@
   }
   #page-wrapper #content-wrapper .home .content-3 .img-text-content .twitter .twitter-content ul li .date-time {
     width: 14.4%;
+  }
+  #page-wrapper #content-wrapper .home .content-5 .img-text-content .text-content .each-col {
+    width: 100%;
+  }
+  #page-wrapper #content-wrapper .flavour .content-7 .img-text-content .text-content .each-col {
+    width: 100%;
+  }
+  #page-wrapper #content-wrapper .contact .content-2 .img-text-content .text-content .each-col {
+    width: 100%;
   }
 }
 @media all and (max-width: 375px) {

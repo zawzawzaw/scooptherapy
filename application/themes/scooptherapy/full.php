@@ -1,5 +1,7 @@
 <?php $view->inc('elements/header.php'); ?>
 
+		<?php $view->inc('elements/mobile-menu.php'); ?>
+
 		<?php $view->inc('elements/slider.php'); ?>
 
 		<div id="content-wrapper">

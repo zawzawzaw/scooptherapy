@@ -44,7 +44,7 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ScrollToPlugin.min.js"></script>
 	<script type="text/javascript" src="<?= $view->getThemePath() ?>/js/plugins/instafeed.min.js"></script>
-	<script type="text/javascript" src="<?= $view->getThemePath() ?>/js/plugins/twitterFetcher.full.js"></script>
+	<script type="text/javascript" src="<?= $view->getThemePath() ?>/js/plugins/twitterFetcher_v15.full.js"></script>
 	<script type="text/javascript" src="<?= $view->getThemePath() ?>/js/plugins/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="<?= $view->getThemePath() ?>/js/plugins/slick.min.js"></script>
 

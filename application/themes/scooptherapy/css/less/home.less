@@ -1,12 +1,11 @@
 .home {
 	.content-1 {
-		// background-color: @light-grey;
-
+		text-align: center;
 		.img-content {
 			display: inline-block;
 			vertical-align: middle;
-			width: 50%;
-			// margin-bottom: -7px;
+			// width: 50%;
+			width: 668px;
 			img {
 				width: 100%;
 			}
@@ -15,10 +14,12 @@
 		.text-content {
 			display: inline-block;
 			vertical-align: middle;
-			width: 48%;
+			// width: 48%;
+			width: 660px;
 			margin-left: -5px;
 			padding-left: 83px;		
-			padding-right: 70px;		
+			padding-right: 70px;	
+			text-align: left;	
 			h4 {
 				margin-bottom: 13px;
 			}
@@ -35,8 +36,10 @@
 			}
 		}
 	}
+	.content-2, .content-extra, .content-3, .content-5 {
+		padding: 70px 40px 70px 40px;
+	}
 	.content-2 {
-		padding: 70px 40px 100px 40px;
 		background-color: @light-grey;
 		.heading {
 			text-align: center;
@@ -54,7 +57,11 @@
 			padding-top: 35px;
 			.each-flavour {
 				display: inline-block;
-				width: 18%;
+				// width: 18%;				
+    			margin-right: 115px;
+    			&:last-child {
+    				margin-right: 0px;
+    			}
 				img {
 					margin: 0 auto;
 				}
@@ -105,7 +112,6 @@
 	}
 
 	.content-extra {
-		padding: 75px 40px 100px 40px;
 		text-align: center;
 
 		.img-text-content {
@@ -204,7 +210,6 @@
 
 	.content-3 {
 		background-color: @light-grey;
-		padding: 75px 40px 100px 40px;		
 		.heading {
 			text-align: center;
 			h4, h2 {
@@ -334,6 +339,9 @@
 								}
 								span {
 									display: none;
+									&:nth-of-type(1) {
+										display: block;
+									}									
 								}
 							}
 							.twitter-text {
@@ -378,11 +386,10 @@
 		width: 100%;
 		height: 450px;
 		background-size: cover;
-		margin-bottom: 20px;
+		// margin-bottom: 20px;
 	}
 
-	.content-5 {
-		padding: 75px 40px 100px 40px;
+	.content-5 {		
 		.heading {
 			text-align: center;
 			h4, h2 {
@@ -401,7 +408,7 @@
 				display: inline-block;
 				vertical-align: middle;
 				margin-right: 66px;
-				width: 34%;
+				width: 650px;
 				.map-container {
 				 	position: relative;
 				  	height: 0;
@@ -488,6 +495,9 @@
 						ul.opening-hours {
 							li {
 								margin-bottom: 25px;
+								&:last-child {
+									margin-bottom: 0px;
+								}
 							}
 						}
 					}

@@ -5,19 +5,80 @@
   .home .content-5 .img-text-content .text-content {
     width: 40%;
   }
+  .contact .content-2 .img-text-content .img-content {
+    width: 45%;
+  }
+  .contact .content-2 .img-text-content .text-content {
+    width: 40%;
+  }
+}
+@media all and (max-width: 1380px) {
+  #page-wrapper .slider-wrapper div.item div.carousel-caption div.caption-text h1 {
+    font-size: 99px;
+    line-height: 110px;
+  }
+  .home .content-extra .img-text-content .text-content {
+    width: 33.08%;
+  }
+  .home .content-extra .img-text-content .img-content {
+    width: 54.68%;
+  }
+  .home .content-extra .img-text-content-2 .img-content {
+    width: 30.08%;
+  }
+  .home .content-extra .img-text-content-2 .text-content {
+    width: 58.68%;
+  }
 }
 @media all and (max-width: 1200px) {
+  #page-wrapper .slider-wrapper div.item div.carousel-caption div.caption-text h1 {
+    font-size: 79px;
+    line-height: 90px;
+  }
   .home .content-1 .text-content {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  .home .content-3 {
-    padding: 75px 40px 75px 40px;
+  .home .content-extra,
+  .home .content-2,
+  .home .content-3,
+  .home .content-5 {
+    padding: 70px 40px;
   }
   .home .content-3 .img-text-content .instagram {
     width: 40%;
   }
   .home .content-3 .img-text-content .twitter {
     width: 40%;
+  }
+  .home .content-extra .img-text-content .text-content {
+    width: 33.08%;
+  }
+  .home .content-extra .img-text-content .img-content {
+    width: 54.68%;
+  }
+  .home .content-extra .img-text-content-2 .img-content {
+    width: 30.08%;
+  }
+  .home .content-extra .img-text-content-2 .text-content {
+    width: 57.68%;
+  }
+  .flavour .content-1 {
+    padding: 140px 40px 70px 40px;
+  }
+  .flavour .content-2,
+  .flavour .content-3,
+  .flavour .content-4,
+  .flavour .content-5 {
+    padding: 70px 40px;
+  }
+  .contact .content-1 {
+    padding: 140px 40px 70px 40px;
+  }
+  .contact .content-2,
+  .contact .content-3,
+  .contact .content-4,
+  .contact .content-5 {
+    padding: 70px 40px;
   }
 }

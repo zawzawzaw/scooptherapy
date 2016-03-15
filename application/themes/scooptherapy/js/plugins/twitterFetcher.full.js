@@ -164,6 +164,7 @@
       }
     },
     callback: function(data) {
+      console.log(data)
       var div = document.createElement('div');
       div.innerHTML = data.body;
       if (typeof(div.getElementsByClassName) === 'undefined') {

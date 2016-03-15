@@ -30,47 +30,62 @@
 				}
 			}
 		}
-		#content-wrapper {
-			#menu-logo-wrapper {
-				.main-menu {
-					padding: 0 20px;
-					.toggle-menu-container {
-						margin-right: 0px;
-					}
-					.pull-left {
-						margin-top: 20px;
-						// position: relative;
-					}
-					.main-nav-wrapper {
-						position: absolute;						
-						width: 100%;											    
-					    padding-left: 20px;
-					    left: 0;
-					    top: 77px;
-					    height: 0px;
-					    visibility: hidden;
-						.opacity(0);
-						.transition(.10s);
-					    &.mobile-show-nav {
-							background: white;
-							height: auto!important;
-							visibility: visible;
-							.opacity(1);
-							border-top: 1px solid @vertical-seperator;
-						}
-						ul {
-							padding-top: 35px;
-							padding-bottom: 10px;
-							li {
-								display: block;
-								margin-bottom: 20px;
-							}
-						}
+		#menu-logo-wrapper {
+			.header-bar {
+				padding: 0 20px;
+				.toggle-menu-container {
+					margin-right: 0px;
+				}
+				.pull-left {
+					margin-top: 20px;
+					// position: relative;
+				}				
+				.main-nav-wrapper {
+					display: none;
+				}
+			}
+		}
+		.mobile-nav-wrapper {			
+			position: fixed;						
+			width: 100%;											    
+		    padding-left: 20px;
+		    left: 0;
+		    top: 77px;
+		    height: 0px;
+		    visibility: hidden;
+		    box-shadow: 1px 1px 16px #EAEAEA;
+			.opacity(0);
+			.transition(.10s);
+		    &.mobile-show-nav {
+		    	display: block;
+				background: white;
+				height: auto!important;
+				visibility: visible;
+				.opacity(1);
+				z-index: 500;
+			}
+			ul {
+				padding-top: 35px;
+				padding-bottom: 10px;
+				li {
+					display: block;
+					margin-bottom: 20px;
+					a {
+						.gotham-black;
+						font-size: 15px;
+						line-height: 30px;
+						letter-spacing: 0.03em;
+						color: @black;
+						text-transform: uppercase;						
 					}
 				}
 			}
+		}
+		#content-wrapper {
+			
 			.home {
 				.content-1 {
+					padding-top: 120px 20px 0px 20px;
 					.img-content {
 						display: block;
 						width: 100%;						
@@ -89,8 +104,10 @@
 						}
 					}
 				}
-				.content-2 {
+				.content-2, .content-extra, .content-3, .content-5, .content-6 {
 					padding: 50px 20px;
+				}
+				.content-2 {					
 					.heading {
 						h4 {
 							margin-bottom: 0px;
@@ -112,8 +129,7 @@
 						}
 					}
 				}
-				.content-extra {
-					padding: 50px 20px;	
+				.content-extra {					
 					.heading {
 						h4 {
 							margin-bottom: 0px;
@@ -126,8 +142,7 @@
 						}
 					}
 				}
-				.content-3 {
-					padding: 50px 20px;	
+				.content-3 {					
 					.heading {
 						h4 {
 							margin-bottom: 0px;
@@ -140,8 +155,7 @@
 				.content-4 {
 					margin-bottom: 0px;
 				}
-				.content-5 {
-					padding: 50px 20px; 
+				.content-5 {					
 					.heading {
 						h4 {
 							margin-bottom: 0px;
@@ -151,8 +165,7 @@
 						padding-top: 40px;
 					}
 				}
-				.content-6 {
-					padding: 50px 20px;
+				.content-6 {					
 					.heading {
 						h4 {
 							margin-bottom: 0px;
@@ -178,6 +191,7 @@
 			}
 			.contact {
 				.content-1 {
+					padding: 120px 20px 50px 20px;
 					.contact-form {
 						.left-fields {
 							width: 100%;
@@ -203,6 +217,9 @@
 						}
 					}
 				}
+				.content-2 {
+					padding: 50px 20px;
+				}
 			}
 			.flavour {
 				.img-text-content {
@@ -217,13 +234,21 @@
 					}
 				}
 				.content-1 {
-					padding: 140px 20px 50px 20px;
+					padding: 120px 20px 0px 20px;
 				}
-				.content-2, .content-3, .content-4, .content-5 {
-					padding: 50px 20px;
+				.content-2, .content-3, .content-4, .content-5, .content-7 {
+					padding: 50px 20px 0px 20px; 
+				}
+				.content-3 {
+					padding-bottom: 50px;
+				}
+				.content-5 {
+					padding-bottom: 50px;
 				}
 				.content-7 {
-					padding: 50px 20px; 
+					padding-bottom: 50px;	
+				}
+				.content-7 {					
 					.heading {
 						h4 {
 							margin-bottom: 0px;
@@ -235,6 +260,9 @@
 				}
 			}
 			.contact {
+				.content-1 {
+					padding: 120px 20px 50px 20px;
+				}
 				.content-2 {
 					padding: 50px 20px; 
 					.heading {
