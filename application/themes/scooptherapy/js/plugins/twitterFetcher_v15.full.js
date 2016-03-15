@@ -309,8 +309,7 @@
             if (printUser) {
               op += '<div class="user twitter-img">' + strip(authors[n].innerHTML) +
                   '</div>';
-            }
-            console.log(authors[n]);
+            }            
             op += '<div class="twitter-text"><h5>'+$(authors[n]).find('.TweetAuthor-name').html()+' <span class="tag">'+$(authors[n]).find('.TweetAuthor-screenName').html()+'</span></h5><p class="tweet">' + tweets[n].innerHTML + '</p></div>';
             if (printTime) {
               var timeLabel = times[n].getAttribute('aria-label');

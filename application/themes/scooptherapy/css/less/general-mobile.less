@@ -78,6 +78,20 @@
 						color: @black;
 						text-transform: uppercase;						
 					}
+					.child-nav {
+						padding-left: 30px;
+					    padding-top: 15px;
+					    padding-bottom: 0px;
+						display: none;
+						visibility: hidden;
+						.opacity(0);
+						.transition(.10s);
+					    &.show-child-nav {
+							display: block;
+							visibility: visible;
+							.opacity(1);
+					    }
+					}
 				}
 			}
 		}

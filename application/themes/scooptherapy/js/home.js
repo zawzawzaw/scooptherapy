@@ -46,12 +46,34 @@ $(document).ready(function(){
 
         if(hash.indexOf('contact') > -1 || url.indexOf('flavour') > -1) {
             window.location.href = url;
-            console.log('hi')
         }
 
         hash = hash.replace('_','');
 
         scrollToThis(hash);
+    });
+
+    $('.mobile-nav li a').on('click', function(e){
+        e.preventDefault();
+        var mainNav = $('.mobile-nav');
+        var url = $(this).attr('href');
+        var hash = url.substring(url.indexOf('#'));        
+
+        if(hash.indexOf('flavour') > -1) {
+            mainNav.find('.child-nav').toggleClass('show-child-nav');
+        }else {
+            if(mainNav.parent().hasClass('mobile-show-nav')) {
+                mainNav.parent().removeClass('mobile-show-nav');
+            }             
+
+            if(hash.indexOf('contact') > -1 || url.indexOf('flavour') > -1) {
+                window.location.href = url;
+            }
+        
+            hash = hash.replace('_','');
+
+            scrollToThis(hash);
+        }        
     });
 
     ///////
