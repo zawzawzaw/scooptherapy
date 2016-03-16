@@ -5,7 +5,7 @@
 			<a href="<?php echo View::url('/'); ?>#_flavours">Flavours</a>
 			<ul class="child-nav">
 				<li><a href="<?php echo View::url('flavour#_dairy'); ?>">Dairy</a></li>
-				<li><a href="<?php echo View::url('flavour#_sorbet'); ?>">Sorbets</a></li>
+				<li><a href="<?php echo View::url('flavour#_sorbets'); ?>">Sorbets</a></li>
 				<li><a href="<?php echo View::url('flavour#_alcoholic'); ?>">Alcoholic</a></li>
 				<li><a href="<?php echo View::url('flavour#_seasonal'); ?>">Seasonal</a></li>
 				<li><a href="<?php echo View::url('flavour#_desserts'); ?>">Desserts</a></li>

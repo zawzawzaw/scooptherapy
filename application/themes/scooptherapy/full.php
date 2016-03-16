@@ -92,7 +92,6 @@
 							    $a = new Area('Event Image');							    
 							    $a->display($c);
 							?>
-							<!-- img src="<?= $view->getThemePath() ?>/images/content/event-content.png" class="img-responsive"> -->
 						</div>
 						<div class="text-content">
 							<?php

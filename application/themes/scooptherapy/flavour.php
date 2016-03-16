@@ -54,7 +54,7 @@
 				</div>
 			</div>
 
-			<div id="sorbet" class="content-2">
+			<div id="sorbets" class="content-2">
 				<div class="img-text-content">
 					<div class="sub-heading">
 						<?php
@@ -158,6 +158,58 @@
 					</div>
 				</div>
 			</div>
+
+			<div id="wholesale" class="content-extra">
+
+					<div class="img-text-content">
+						<div class="img-content visible-xs visible-sm visible-md">
+							<img src="<?= $view->getThemePath() ?>/images/content/contact-us-content.png" class="img-responsive">
+						</div>
+						<div class="text-content">
+							<?php
+							    $a = new Area('Contact Us');							    
+							    $a->display($c);
+							?>							
+						</div>
+						<div class="img-content hidden-xs hidden-sm hidden-md">
+							<?php
+							    $a = new Area('Contact Us Image');							    
+							    $a->display($c);
+							?>
+						</div>
+					</div>
+					<div class="img-text-content-2">
+						<div class="img-content">
+							<?php
+							    $a = new Area('Event Image');							    
+							    $a->display($c);
+							?>
+						</div>
+						<div class="text-content">
+							<?php
+							    $a = new Area('Event Title');							    
+							    $a->display($c);
+							?>
+							<div class="each-col">
+							<?php
+							    $a = new Area('Event Content 1');	
+							    $a->display($c);
+							?>
+							</div>
+							<div class="each-col">
+							<?php
+							    $a = new Area('Event Content 2');							     	
+							    $a->display($c);
+							?>
+							</div>
+							<?php
+							    $a = new Area('Event CTA');							     	
+							    $a->display($c);
+							?>							
+						</div>
+					</div>
+
+				</div>
 			
 			<?php
 			    $a = new Area('Image Divider');						    

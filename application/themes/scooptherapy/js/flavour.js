@@ -39,13 +39,32 @@ $(document).ready(function(){
                 }
             }
         ]
-      });
+      });    
+
+    $('.main-nav li a').on('click', function(e){
+        e.preventDefault();
+        var mainNav = $('.main-nav');
+        // if(mainNav.hasClass('show-nav')) {
+        //     mainNav.removeClass('show-nav');  
+        // }
+        if(mainNav.parent().hasClass('mobile-show-nav')) {
+            mainNav.parent().removeClass('mobile-show-nav');
+        } 
+
+        var url = $(this).attr('href');
+        var hash = url.substring(url.indexOf('#'));
+
+        if(url.indexOf('flavour') > -1) {
+            hash = hash.replace('_','');
+            scrollToThis(hash);             
+        }else {
+            window.location.href = url;
+        }        
+    });
 
     var hash = window.location.hash;    
 
     hash = hash.replace('_','');
-
-    console.log(hash);
 
     if(hash) {
         var target_y = $(hash).offset().top - 78;
@@ -72,25 +91,4 @@ $(document).ready(function(){
             }
         });
     }
-
-    $('.main-nav li a').on('click', function(e){
-        e.preventDefault();
-        var mainNav = $('.main-nav');
-        // if(mainNav.hasClass('show-nav')) {
-        //     mainNav.removeClass('show-nav');  
-        // }
-        if(mainNav.parent().hasClass('mobile-show-nav')) {
-            mainNav.parent().removeClass('mobile-show-nav');
-        } 
-
-        var url = $(this).attr('href');
-        var hash = url.substring(url.indexOf('#'));
-
-        if(url.indexOf('flavour') > -1) {
-            hash = hash.replace('_','');
-            scrollToThis(hash);             
-        }else {
-            window.location.href = url;
-        }        
-    });
 });
