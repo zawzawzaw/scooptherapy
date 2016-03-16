@@ -1942,7 +1942,7 @@ footer#footer-wrapper ul li a:hover {
   display: inline-block;
   vertical-align: middle;
   margin-right: 66px;
-  width: 34%;
+  width: 650px;
 }
 .contact .content-2 .img-text-content .img-content .map-container {
   position: relative;
@@ -1966,8 +1966,11 @@ footer#footer-wrapper ul li a:hover {
 .contact .content-2 .img-text-content .text-content .each-col {
   display: inline-block;
   width: 38.7%;
-  margin-right: 10%;
   vertical-align: top;
+}
+.contact .content-2 .img-text-content .text-content .each-col:first-child {
+  margin-right: 5%;
+  width: 43%;
 }
 .contact .content-2 .img-text-content .text-content .each-col .info {
   vertical-align: top;
@@ -2019,4 +2022,7 @@ footer#footer-wrapper ul li a:hover {
 }
 .contact .content-2 .img-text-content .text-content .each-col .info ul.opening-hours li {
   margin-bottom: 25px;
+}
+.contact .content-2 .img-text-content .text-content .each-col .info ul.opening-hours li:last-child {
+  margin-bottom: 0px;
 }

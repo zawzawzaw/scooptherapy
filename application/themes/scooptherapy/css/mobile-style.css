@@ -165,6 +165,12 @@
   .flavour .content-7 .img-text-content .text-content {
     width: 40%;
   }
+  .contact .content-2 .img-text-content .img-content {
+    width: 53%;
+  }
+  .contact .content-2 .img-text-content .text-content {
+    width: 40%;
+  }
 }
 @media all and (max-width: 1200px) {
   #page-wrapper .slider-wrapper div.item div.carousel-caption div.caption-text h1 {
