@@ -2063,3 +2063,35 @@ footer#footer-wrapper ul li a:hover {
 .contact .content-2 .img-text-content .text-content .each-col .info ul.opening-hours li {
   margin-bottom: 25px;
 }
+.holder {
+  background-color: #e8b10e;
+  text-align: center;
+}
+.holder h2 {
+  font-size: 40px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-bottom: 10%;
+}
+.holder ul li {
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.holder ul li a {
+  color: #000000;
+}
+.holder img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.valign-table {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.valign-table .valign-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
