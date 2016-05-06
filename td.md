@@ -1,7 +1,7 @@
 mobile
-- to standard images size 
-- divider 1/3 the height
-- image size to follow first image
+- to standardize images size (done)
+- divider 1/3 the height (done)
+- image size to follow first image (done)
 - menu top and bottom margin (done)
 - adding dropdown (done)
 - drop shadow for menu (done)
