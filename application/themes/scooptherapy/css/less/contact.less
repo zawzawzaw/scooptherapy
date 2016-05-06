@@ -131,9 +131,9 @@
 		}
 	}
 
-	.content-2 {
+	.content-2 {	
 		padding: 70px 40px;
-		background-color: @light-grey;
+		background-color: @light-grey;	
 		.heading {
 			text-align: center;
 			h4, h2 {
@@ -152,7 +152,7 @@
 				display: inline-block;
 				vertical-align: middle;
 				margin-right: 66px;
-				width: 34%;
+				width: 650px;
 				.map-container {
 				 	position: relative;
 				  	height: 0;
@@ -178,9 +178,12 @@
 				text-align: left;
 				.each-col {
 					display: inline-block;
-					width: 38.7%;
-					margin-right: 10%;
+					width: 38.7%;					
 					vertical-align: top;					
+					&:first-child {
+						margin-right: 5%;
+						width: 43%;
+					}
 					.info {
 	    				vertical-align: top;	    				
 						text-align: left;
@@ -236,6 +239,9 @@
 						ul.opening-hours {
 							li {
 								margin-bottom: 25px;
+								&:last-child {
+									margin-bottom: 0px;
+								}
 							}
 						}
 					}
@@ -244,4 +250,118 @@
 			}
 		}
 	}
+
+	// .content-2 {
+	// 	padding: 70px 40px;
+	// 	background-color: @light-grey;
+	// 	.heading {
+	// 		text-align: center;
+	// 		h4, h2 {
+	// 			text-transform: uppercase;
+	// 		}
+	// 		h4 {
+	// 			color: @yellow;
+	// 			margin-bottom: 15px;
+	// 		}
+	// 	}
+	// 	.img-text-content {
+	// 		width: 100%; 
+	// 		text-align: center;
+	// 		padding-top: 50px;
+	// 		.img-content {
+	// 			display: inline-block;
+	// 			vertical-align: middle;
+	// 			margin-right: 66px;
+	// 			width: 34%;
+	// 			.map-container {
+	// 			 	position: relative;
+	// 			  	height: 0;
+	// 			  	padding-bottom: 68.2%; /* of parent width */
+	// 			  	.map {
+	// 					position: absolute;
+	// 				  	left: 0;
+	// 				  	top: 0;
+	// 				  	height: 100%;
+	// 				  	width: 100%;
+	// 					// display: inline-block;
+	// 					// margin-right: 66px;
+	// 				 //    width: 34%;
+	// 					// height: 423px;						
+	// 				}
+	// 			}
+	// 		}
+	// 		.text-content {
+	// 			display: inline-block;
+	// 			width: 36%;
+	// 			// width: 29.13%;
+	// 			vertical-align: middle;
+	// 			text-align: left;
+	// 			.each-col {
+	// 				display: inline-block;
+	// 				width: 38.7%;
+	// 				margin-right: 10%;
+	// 				vertical-align: top;					
+	// 				.info {
+	//     				vertical-align: top;	    				
+	// 					text-align: left;
+
+	// 					h6 {
+	// 						.hurmegeometricsans2-black;
+	// 						font-size: 12px;
+	// 						line-height: 23px;
+	// 						text-transform: uppercase;
+	// 						color: @grey;
+	// 					}
+	// 					h4 {
+	// 						color: @black;
+	// 						margin-bottom: 10px;
+	// 					}
+	// 					p {
+	// 						color: @dark-grey-2;						
+	// 						a {
+	// 							color: @yellow;
+	// 						}					
+	// 					}
+	// 					a {
+	// 						color: @dark-grey-2;
+	// 					}
+	// 					&.second-info {
+	// 						margin-top: 40px;
+	// 					}
+	// 					&.last-info {
+	// 						p {
+	// 							margin-bottom: 20px;
+	// 						}
+	// 					}
+	// 					ul.contact {
+	// 						margin-top: 8px;
+	// 						li {
+	// 							margin-bottom: 8px;
+	// 							a {
+	// 								i {
+	// 									background: url('../images/icons/mail-icon.png') no-repeat;
+	// 									width: 14px;
+	// 									height: 10px;
+	// 									display: inline-block;
+	// 									margin-right: 10px;
+	// 								}
+	// 								i.phone {
+	// 									background: url('../images/icons/phone-icon.png') no-repeat;	
+	// 									width: 17px;
+	// 									height: 11px;								
+	// 								}
+	// 							}
+	// 						}
+	// 					}
+	// 					ul.opening-hours {
+	// 						li {
+	// 							margin-bottom: 25px;
+	// 						}
+	// 					}
+	// 				}
+	// 			}
+
+	// 		}
+	// 	}
+	// }
 }
